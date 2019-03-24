@@ -13,6 +13,7 @@ public class Main {
         Double numDouble = Double.valueOf(doubleNumString);
 
         //Try to convert a string that is not a number (e.g. abc) to an Integer. What happens?
+        // GP shouldn't this be in a try/catch?
         int abcInt = Integer.parseInt("abc");
         System.out.println(abcInt);
 
