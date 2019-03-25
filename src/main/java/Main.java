@@ -13,8 +13,13 @@ public class Main {
         Double numDouble = Double.valueOf(doubleNumString);
 
         //Try to convert a string that is not a number (e.g. abc) to an Integer. What happens?
-        int abcInt = Integer.parseInt("abc");
-        System.out.println(abcInt);
+
+        try{
+            int abcInt = Integer.parseInt("abc");
+            System.out.println(abcInt);
+        }catch (Exception e) {
+            System.out.println(e.getClass());
+        }
 
         //How do you convert an integer to a double?
         int a = 3;
