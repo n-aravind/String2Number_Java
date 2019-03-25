@@ -14,12 +14,14 @@ public class Main {
 
         //Try to convert a string that is not a number (e.g. abc) to an Integer. What happens?
 
+        // GP shouldn't this be in a try/catch?
         try{
             int abcInt = Integer.parseInt("abc");
             System.out.println(abcInt);
         }catch (Exception e) {
             System.out.println(e.getClass());
         }
+
 
         //How do you convert an integer to a double?
         int a = 3;
